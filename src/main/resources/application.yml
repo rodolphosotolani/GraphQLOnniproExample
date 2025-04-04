@@ -1,0 +1,23 @@
+spring:
+    application:
+        name: GraphQLOnniproExample
+# JPA
+    jpa:
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
+    show-sql: true
+#DOCKER COMPOSE INITIALIZER
+    docker:
+        compose:
+            lifecycle-management: start_and_stop
+#SWAGGER
+springdoc:
+    swagger-ui:
+        path: /swagger-ui.html
+        tags-sorter: alpha
+        operations-sorter: alpha
+    api-docs:
+        path: /v3/api-docs
+    default-produces-media-type: application/json
+    default-consumes-media-type: application/json
