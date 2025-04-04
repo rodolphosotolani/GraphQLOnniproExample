@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Docker Compose",
+      "Group": "Servers",
+      "Port": 5432,
+      "Username": "rts",
+      "Host": "postgres_onnipro_example",
+      "SSLMode": "prefer",
+      "MaintenanceDB": "onnipro_example",
+      "PassFile": "/tmp/pgpassfile"
+    }
+  }
+}
