@@ -6,11 +6,20 @@ spring:
         generate-ddl: true
         hibernate:
             ddl-auto: update
-    show-sql: true
+        properties:
+            hibernate:
+                show_sql: true
 #DOCKER COMPOSE INITIALIZER
     docker:
         compose:
             lifecycle-management: start_and_stop
+    graphql:
+        graphiql:
+            enabled: true
+        schema:
+            introspection:
+                enabled: true
+
 #SWAGGER
 springdoc:
     swagger-ui:
